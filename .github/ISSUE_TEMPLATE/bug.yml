@@ -1,0 +1,73 @@
+name: 🐛 Bug report / Signaler un bug
+description: Quelque chose ne marche pas comme attendu — Something is not working as expected.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de signaler ce bug ! 🙏 Plus vous donnez de détails, plus vite on corrige.
+        Thanks for reporting! The more details, the faster we fix it.
+
+  - type: dropdown
+    id: server
+    attributes:
+      label: Serveur concerné / Affected server
+      options:
+        - Hub
+        - Survie / Survival
+        - Créatif / Creative
+        - Norath World (nwland)
+        - Proxy / Lobby de connexion
+        - Plusieurs / Several
+        - Je ne sais pas / Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Que s'est-il passé ? / What happened?
+      description: Décris ce qui n'a pas marché. / Describe what went wrong.
+      placeholder: "Quand je fais /home, je suis téléporté à 0,0 au lieu de mon spawn."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu / Expected behavior
+      placeholder: "Je devrais être téléporté à la position que j'ai sauvegardée."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire / Steps to reproduce
+      description: Liste précise des actions. / Precise list of actions.
+      placeholder: |
+        1. Aller sur Survie
+        2. Taper /sethome maison
+        3. Taper /home maison
+        4. Observer la téléportation foireuse
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: Quand / When (date + heure approximative)
+      placeholder: "27/05/2026 ~ 22h30"
+
+  - type: input
+    id: pseudo
+    attributes:
+      label: Pseudo Minecraft / Minecraft username
+      placeholder: "Shamallow_"
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: Captures, logs, vidéos / Screenshots, logs, videos
+      description: Glissez-déposez les fichiers ou collez les liens. / Drag-drop files or paste links.

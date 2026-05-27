@@ -1,0 +1,40 @@
+name: 💡 Suggestion / Proposer une idée
+description: Une feature, une amélioration, une idée d'évènement. / A feature, improvement, or event idea.
+title: "[Idée] "
+labels: ["enhancement", "triage"]
+body:
+  - type: dropdown
+    id: server
+    attributes:
+      label: Serveur ou partie du réseau concernée / Affected server or area
+      options:
+        - Hub
+        - Survie / Survival
+        - Créatif / Creative
+        - Norath World (nwland)
+        - Réseau global / Whole network
+        - Site web / Website
+        - Autre / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: L'idée en une phrase / The idea in one sentence
+      placeholder: "Ajouter un système de quêtes journalières sur Survie."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Pourquoi ? / Why?
+      description: Quel problème ça résout, ou qu'est-ce que ça apporte aux joueurs ?
+      placeholder: "Donner une raison de se connecter tous les jours, et débloquer des items cosmétiques."
+
+  - type: textarea
+    id: how
+    attributes:
+      label: Comment vous l'imaginez / How you picture it
+      description: Optionnel — si vous avez déjà pensé à des détails.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Xeinoria
+    url: https://discord.gg/xeinoria
+    about: Pour discuter en direct, demander de l'aide rapide, ou pour les urgences. / Live chat, quick help, or anything urgent.
+  - name: 🔐 Faille de sécurité (privé) / Security advisory (private)
+    url: https://github.com/Xeinoria-Studio/xeinoria-feedback/security/advisories/new
+    about: Pour signaler une vulnérabilité sans la rendre publique. / Report a vulnerability privately.
