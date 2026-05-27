@@ -1,12 +1,12 @@
-name: ❓ Question
-description: Vous voulez comprendre quelque chose ou demander de l'aide. / Ask for help or clarification.
+name: Poser une question
+description: Vous voulez comprendre quelque chose ou demander de l'aide.
 title: "[Question] "
 labels: ["question", "triage"]
 body:
   - type: textarea
     id: question
     attributes:
-      label: Votre question / Your question
+      label: Votre question
       placeholder: "Comment ça marche, le système de claim sur Survie ?"
     validations:
       required: true
@@ -14,5 +14,5 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: Contexte / Context
+      label: Contexte
       description: Ce que vous avez déjà essayé ou lu, le serveur concerné, etc.
